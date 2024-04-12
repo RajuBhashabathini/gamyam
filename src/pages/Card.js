@@ -66,37 +66,37 @@ const Card = ({ data }) => {
         )}
       </div>
       <div className="p-3 text-part ">
-        <div className="font-bold text-[12px] lg:text-[18px] md:text-[18px] flex  gap-3 items-center">
+        <div className="font-bold text-[14px] lg:text-[18px] md:text-[18px] flex  gap-3 items-center">
           {data.village_name},{data.mandal_name}{" "}
           <img src="https://1acre.in/static/images/icons/verified-active.svg" />
         </div>
-        <div className="font-bold text-[12px] lg:text-[18px] md:text-[18px]">
+        <div className="font-bold text-[14px] lg:text-[18px] md:text-[18px]">
           {data.district_name}
           {"(dt)"}
         </div>
         <div className="flex flex-row items-center gap-2">
           {data.total_land_size_in_acres.acres > 0.0 ? (
             <>
-              <p className=" text-[12px] lg:text-[18px] md:text-[18px]  ">
+              <p className=" text-[14px] lg:text-[18px] md:text-[18px]  ">
                 {data.total_land_size_in_acres.acres} {""}
                 {"Acres ."} {""}
               </p>
               {"₹ "}
-              <p className=" text-[12px] lg:text-[18px] md:text-[18px]  ">
+              <p className=" text-[14px] lg:text-[18px] md:text-[18px]  ">
                 {data.price_per_acre / 100} crores per acre
               </p>
             </>
           ) : (
             <>
-              <p className="font-bold text-[12px] lg:text-[18px] md:text-[18px]">
+              <p className="font-bold text-[14px] lg:text-[18px] md:text-[18px]">
                 {data.total_land_size_in_acres.guntas} {"Guntas ."} {"₹ "}{" "}
               </p>
               {data.total_price > 100 ? (
-                <p className=" font-normal text-[12px] lg:text-[18px] md:text-[18px]">
+                <p className=" font-normal text-[14px] lg:text-[18px] md:text-[18px]">
                   {data.total_price / 100} crores for full property
                 </p>
               ) : (
-                <p className="font-normal text-[12px] lg:text-[18px] md:text-[18px]">
+                <p className="font-normal text-[14px] lg:text-[18px] md:text-[18px]">
                   {data.total_price.toFixed(2)} lakhs for full property
                 </p>
               )}
